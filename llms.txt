@@ -1,0 +1,13 @@
+# Relatório Técnico: Mensagens de Liderança sob Autoria Oculta (IA, Humano e Augmentation)
+
+> Dissertação de mestrado de Larissa Angélica Páscoa Santana (FGV EAESP, 2026), orientada pelo Prof. Dr. Paul Ferreira. Experimento controlado (N=200) sobre o efeito de mensagens gerenciais escritas por humanos, IA ou em coautoria (augmentation), com e sem Táticas de Liderança Carismática (CLTs de Antonakis), na execução de tarefas e percepção de autoria.
+
+## Achados Principais (Escopo Experimental)
+- **Identificação de autoria algorítmica (exploratório):** Apenas 6,1% dos participantes expostos a textos gerados integralmente por IA identificaram corretamente a origem algorítmica; 54,5% atribuíram a autoria a uma pessoa.
+- **Percepção de importância da tarefa (exploratório, χ² = 8,24, p = 0,016):** 55,6% dos participantes do grupo Humano relataram perceber a tarefa como mais importante/significativa, contra 36,4% no grupo IA pura e 32,4% no grupo Humano + IA.
+- **Indiferença à mensagem (exploratório, p = 0,047):** 4,8% no grupo Humano relataram não ter sido afetados pela mensagem, frente a 18,2% na IA pura e 14,1% na coautoria.
+- **Desempenho operacional:** Não foram observadas diferenças estatisticamente significativas no volume (p > 0,21, com efeito de teto de 31 fragmentos) ou na precisão técnica (p > 0,84) entre as condições de autoria, nem efeito estatisticamente detectável das táticas carismáticas (p > 0,50).
+
+## Links e Citação
+- [Relatório Técnico Completo (HTML)](https://larissasantanajdsp.github.io/lideranca-autoria-oculta/)
+- **Citação recomendada:** SANTANA, Larissa Angélica Páscoa. Relatório Técnico: Mensagens de Liderança sob Autoria Oculta (IA, Humano e Augmentation). São Paulo: FGV EAESP, 2026.

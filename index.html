@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Relatório Técnico: Mensagens de Liderança sob Autoria Oculta (IA, Humano e Augmentation) | FGV EAESP</title>
-  <meta name="description" content="Relatório técnico da dissertação de mestrado de Larissa Angélica Páscoa Santana (FGV EAESP, 2026), orientada pelo Prof. Dr. Paul Ferreira, sobre mensagens de liderança sob autoria oculta (IA, Humano e Augmentation).">
+  <meta name="description" content="Relatório técnico da dissertação de mestrado (MPA) de Larissa Angélica Páscoa Santana (FGV EAESP, 2026), orientada pelo Prof. Dr. Paul Ferreira, sobre mensagens de liderança sob autoria oculta (IA, Humano e Augmentation).">
   <meta name="author" content="Larissa Angélica Páscoa Santana">
-  <meta name="citation_title" content="Mensagens de Liderança sob Autoria Oculta (IA, Humano e Augmentation)">
+  <meta name="citation_title" content="Mensagens de Liderança sob Autoria Oculta: Efeitos da Autoria Humana, da Inteligência Artificial e de Augmentation Humano–IA">
   <meta name="citation_author" content="Santana, Larissa Angélica Páscoa">
   <meta name="citation_publication_date" content="2026">
   <meta name="citation_dissertation_institution" content="Fundação Getulio Vargas (FGV EAESP)">
@@ -19,23 +19,40 @@
     "headline": "Relatório Técnico: Mensagens de Liderança sob Autoria Oculta (IA, Humano e Augmentation)",
     "author": {
       "@type": "Person",
-      "name": "Larissa Angélica Páscoa Santana"
+      "name": "Larissa Angélica Páscoa Santana",
+      "affiliation": [
+        { "@type": "Organization", "name": "FGV EAESP" },
+        { "@type": "Organization", "name": "CALOR" }
+      ]
     },
-    "contributor": {
-      "@type": "Person",
-      "name": "Prof. Dr. Paul Ferreira",
-      "roleName": "Orientador"
-    },
+    "contributor": [
+      {
+        "@type": "Person",
+        "name": "Prof. Dr. Paul Ferreira",
+        "roleName": "Orientador"
+      },
+      {
+        "@type": "Person",
+        "name": "Prof. Dr. Fábio Josgrilberg",
+        "roleName": "Banca Avaliadora (FGV EAESP)"
+      },
+      {
+        "@type": "Person",
+        "name": "Profa. Dra. Tatiana Iwai",
+        "roleName": "Banca Avaliadora (Insper)"
+      }
+    ],
     "publisher": {
       "@type": "CollegeOrUniversity",
-      "name": "FGV EAESP"
+      "name": "Fundação Getulio Vargas (FGV EAESP)"
     },
-    "datePublished": "2026",
+    "datePublished": "2026-11",
     "inLanguage": "pt-BR",
     "about": [
       "Generative AI in Leadership",
-      "AI-Mediated Communication",
+      "AI-Mediated Communication (AI-MC)",
       "Computers Are Social Actors (CASA)",
+      "Algorithm Aversion",
       "Charismatic Leadership Tactics"
     ]
   }
@@ -56,7 +73,7 @@
       line-height: 1.65;
       color: var(--text);
       background-color: var(--bg);
-      max-width: 820px;
+      max-width: 840px;
       margin: 0 auto;
       padding: 40px 24px 80px;
     }
@@ -140,6 +157,10 @@
     td.num, th.num {
       text-align: center;
     }
+    .refs li {
+      font-size: 0.92rem;
+      margin-bottom: 8px;
+    }
     footer {
       margin-top: 56px;
       padding-top: 20px;
@@ -154,74 +175,81 @@
   <header>
     <span class="badge">Relatório Técnico • Dissertação de Mestrado (FGV EAESP, 2026)</span>
     <h1>Mensagens de Liderança sob Autoria Oculta (IA, Humano e Augmentation)</h1>
-    <p class="meta"><strong>Autora:</strong> Larissa Angélica Páscoa Santana &nbsp;|&nbsp; <strong>Orientação:</strong> Prof. Dr. Paul Ferreira</p>
+    <p class="meta"><strong>Autora:</strong> Larissa Angélica Páscoa Santana (CALOR / FGV EAESP) &nbsp;|&nbsp; <strong>Orientação:</strong> Prof. Dr. Paul Ferreira</p>
   </header>
 
   <main>
     <section class="card" aria-labelledby="resumo-executivo">
-      <h2 id="resumo-executivo" style="margin-top: 0; border-bottom: none; font-size: 1.15rem;">Resumo Executivo (Síntese dos Achados)</h2>
-      <p><strong>Objeto e Método:</strong> Experimento controlado realizado no Brasil (<em>N</em> = 200) na FGV EAESP (2026) por Larissa Angélica Páscoa Santana, sob orientação do Prof. Dr. Paul Ferreira. O estudo avaliou o impacto de orientações de trabalho escritas por líderes humanos, por inteligência artificial (IA) ou por ambos em coautoria (<em>augmentation</em>) — com e sem as Táticas de Liderança Carismática (CLTs) de Antonakis — sobre a execução de uma tarefa de transcrição e a percepção dos participantes sob autoria oculta.</p>
+      <h2 id="resumo-executivo" style="margin-top: 0; border-bottom: none; font-size: 1.15rem;">Resumo Executivo e Principais Achados</h2>
       <ul>
-        <li><strong>Desempenho operacional:</strong> Não foram observadas diferenças estatisticamente significativas no volume (<em>p</em> &gt; 0,21) ou na precisão técnica (<em>p</em> &gt; 0,84) entre as condições de autoria, nem efeito estatisticamente detectável das táticas carismáticas (<em>p</em> &gt; 0,50). A medição de volume operou sob efeito de teto (31 fragmentos), não permitindo concluir pela equivalência operacional sem teste formal de não inferioridade.</li>
-        <li><strong>Percepção de autoria (achado exploratório):</strong> Entre os participantes expostos a textos gerados integralmente por IA, apenas <strong>6,1%</strong> identificaram corretamente a origem algorítmica da mensagem, enquanto <strong>54,5%</strong> atribuíram a autoria a uma pessoa.</li>
-        <li><strong>Percepção de propósito (achado exploratório):</strong> No grupo exposto a mensagens exclusivamente humanas, <strong>55,6%</strong> relataram perceber a tarefa como mais importante ou significativa (ante <strong>36,4%</strong> na IA pura e <strong>32,4%</strong> na coautoria Humano + IA) e apenas <strong>4,8%</strong> relataram indiferença à mensagem (contra <strong>18,2%</strong> na IA pura e <strong>14,1%</strong> na coautoria).</li>
-        <li><strong>Implicação prática:</strong> Por se tratar de um experimento em cenário específico de microtarefa, os achados não constituem conclusões definitivas, mas sugerem a importância de discutir políticas explícitas de transparência (<em>disclosure</em>) e refletir criticamente sobre quais comunicações — especialmente as ligadas a propósito e conexão emocional — devem ser delegadas à IA.</li>
+        <li><strong>Pesquisa:</strong> Dissertação de mestrado conduzida por <strong>Larissa Angélica Páscoa Santana</strong> (fundadora da escola corporativa CALOR e pesquisadora na FGV EAESP), sob orientação do <strong>Prof. Dr. Paul Ferreira</strong>, avaliada em novembro de 2026 (aprovação ética CEPH/FGV Parecer n. P.030.2025).</li>
+        <li><strong>Desenho e Coleta:</strong> Experimento fatorial 3&times;2 realizado entre abril e junho de 2026 com <strong>200 participantes válidos</strong> no Brasil (plataforma Prolific), testando mensagens instrucionais de liderança escritas por humanos, por inteligência artificial (ChatGPT, Copilot, Gemini) ou em coautoria humano-IA (<em>augmentation</em>), com e sem táticas de liderança carismática, sob regime de autoria oculta.</li>
+        <li><strong>Incapacidade de Detecção de IA (achado exploratório):</strong> Apenas <strong>6,1%</strong> dos participantes que leram textos escritos 100% por IA identificaram a origem algorítmica; <strong>54,5%</strong> atribuíram o texto a uma pessoa.</li>
+        <li><strong>Percepção de Propósito e Significado (achado exploratório):</strong> Ao serem perguntados sobre o impacto da mensagem instrucional, <strong>55,6%</strong> dos participantes que receberam um texto escrito exclusivamente por humanos assinalaram que a mensagem <em>"fez a tarefa parecer mais importante ou significativa"</em>, contra <strong>36,4%</strong> no grupo de IA pura e <strong>32,4%</strong> no grupo de coautoria Humano + IA (&chi;&sup2; = 8,24, <em>p</em> = 0,016).</li>
+        <li><strong>Desempenho Operacional e Limite Estatístico:</strong> As hipóteses principais da pesquisa foram formuladas para medir o efeito da autoria e das táticas carismáticas sobre a <strong>quantidade</strong> (volume de transcrições entregues) e a <strong>qualidade</strong> (precisão técnica das entregas) das tarefas realizadas pelos 200 participantes. Nos testes realizados, não foram observadas diferenças estatisticamente significativas no volume (<em>p</em> &gt; 0,21) ou na precisão técnica (<em>p</em> &gt; 0,84) entre os grupos. Contudo, a saturação no limite máximo da tarefa (efeito de teto de 31 fragmentos) e a ausência de teste de não inferioridade impedem concluir que liderança humana e algorítmica produzam resultados operacionais iguais.</li>
       </ul>
-    </section>
-    <section>
-      <p>Este documento sintetiza o método, os dados estatísticos e as hipóteses aplicadas da dissertação de mestrado de <strong>Larissa Angélica Páscoa Santana</strong> (FGV EAESP, 2026), orientada pelo <strong>Prof. Dr. Paul Ferreira</strong>. Trata-se de um experimento controlado realizado em um cenário específico de microtarefa para avaliar o efeito de orientações de trabalho escritas por líderes humanos, por inteligência artificial (IA) ou por ambos em conjunto (<em>augmentation</em>) — com e sem técnicas de liderança carismática — sobre o comportamento de execução e a percepção dos participantes. Por se tratar de um estudo experimental circunscrito a esse contexto, seus achados não constituem conclusões finais generalizáveis, mas oferecem pistas empíricas relevantes para investigação e prática organizacional.</p>
     </section>
 
     <section>
       <h2>1. Utilidade Prática e Aplicações Organizacionais</h2>
-      <p>Os dados do experimento — especialmente seus achados exploratórios — oferecem subsídios iniciais para a discussão de políticas e critérios de uso de IA generativa na comunicação gerencial:</p>
+      <p>Por se tratar de um estudo experimental circunscrito a um cenário específico, seus achados não constituem conclusões finais generalizáveis, mas fornecem parâmetros iniciais relevantes para a discussão de políticas de uso de IA generativa na comunicação gerencial:</p>
 
       <div class="card">
-        <h3>Discussão sobre regras explícitas de transparência (<em>disclosure</em>)</h3>
+        <h3>Discussão sobre regras de transparência (<em>disclosure</em>) e gestão da aversão ao algoritmo</h3>
         <ul>
           <li><strong>Dado do experimento (achado exploratório):</strong> Apenas <strong>6,1%</strong> dos participantes expostos a textos gerados integralmente por IA identificaram corretamente a origem algorítmica da mensagem, enquanto <strong>54,5%</strong> atribuíram a autoria a uma pessoa.</li>
-          <li><strong>Consequência no dia a dia:</strong> Esse achado exploratório sugere que colaboradores podem não distinguir de forma autônoma se um comunicado gerencial foi escrito por um algoritmo ou por um gestor, o que sugere a importância de as organizações avaliarem políticas institucionais claras definindo quando o uso de IA deve ser declarado.</li>
-          <li><strong>Relação com a literatura:</strong> Os dados convergem com estudos prévios sobre interação humano-IA em contextos organizacionais e avaliativos, com destaque para os trabalhos de <strong>Prithwiraj Choudhury</strong> (como <strong>Tong, Jia, Luo, Fang &amp; Choudhury</strong>, <em>Strategic Management Journal</em>, 2021, sobre o efeito do <em>disclosure</em> de algoritmos de <em>feedback</em> no desempenho de funcionários, e pesquisas correlatas de <strong>Choudhury et al.</strong> sobre <em>augmentation</em> e julgamento humano-algorítmico), além da literatura sobre indistinguibilidade textual de LLMs (como <strong>Jakesch et al.</strong>, <em>PNAS</em>, 2023). Esses estudos demonstram que, na ausência de divulgação explícita (<em>disclosure</em>), indivíduos frequentemente não conseguem diferenciar comunicações geradas por IA daquelas produzidas por humanos — e que a revelação explícita da origem algorítmica pode alterar a reação emocional e a receptividade do receptor.</li>
+          <li><strong>Consequência no dia a dia:</strong> No cotidiano das organizações, colaboradores podem não distinguir de forma autônoma a origem algorítmica de um comunicado gerencial. A baixa taxa de identificação espontânea combinada à demanda social por transparência e ao efeito da rotulagem sobre a utilidade percebida sugere a importância de as empresas estabelecerem políticas institucionais claras definindo quando o uso de IA na comunicação interna deve ser declarado e como estruturar a supervisão humana nesse processo.</li>
+          <li><strong>Relação com a literatura e dados de mercado:</strong> A dificuldade de detecção converge com <strong>Choudhury, Vanneste e Zohrehvand (2024)</strong> no estudo <em>The Wade Test</em>: ao avaliar a capacidade de uma IA treinada no estilo de um CEO real, os autores verificaram que os colaboradores acertaram a origem das mensagens em apenas <strong>59,0%</strong> das tentativas (<strong>56,6%</strong> para respostas geradas pela IA), resultado próximo ao acaso em 6 das 10 perguntas testadas. Além disso, o mesmo estudo evidencia o fenômeno da <strong>aversão ao algoritmo (<em>algorithm aversion</em>)</strong>: quando os receptores acreditam ou são informados por rótulo de que um comunicado foi gerado por IA — independentemente de sua autoria real —, avaliam a resposta como menos útil (<em>helpful</em>) e apresentam menor intenção de adesão em comparação às mensagens atribuídas ao líder humano. No contexto brasileiro, o levantamento <em>O impacto da IA nos hábitos de consumo do brasileiro</em> (Globo Gente) aponta que <strong>67%</strong> dos entrevistados gostariam de escolher quando uma marca pode utilizar IA para personalizar sua comunicação e <strong>74%</strong> defendem que as organizações devem deixar claro quando utilizam IA na criação de anúncios ou conteúdos publicitários.</li>
         </ul>
       </div>
 
       <div class="card">
-        <h3>Reflexão sobre a delegação de comunicações de propósito e conexão emocional</h3>
+        <h3>Reflexão sobre a delegação de comunicações de propósito e significado</h3>
         <ul>
-          <li><strong>Dado do experimento (achado exploratório):</strong> No grupo exposto a mensagens redigidas exclusivamente por humanos, <strong>55,6%</strong> dos participantes relataram perceber a tarefa como mais importante ou significativa (em comparação a <strong>36,4%</strong> no grupo de IA pura e <strong>32,4%</strong> no grupo de coautoria Humano + IA), além de esse grupo apresentar a menor taxa de indiferença à mensagem (<strong>4,8%</strong>, ante <strong>18,2%</strong> na IA pura e <strong>14,1%</strong> na coautoria).</li>
-          <li><strong>Consequência no dia a dia:</strong> Esse resultado exploratório sugere que as organizações devem refletir criticamente sobre quais comunicações devem ser delegadas à IA, especialmente em contextos que envolvem engajamento, propósito e conexão emocional.</li>
-          <li><strong>Relação com a literatura:</strong> Esse padrão dialoga com a literatura de liderança transformacional, carismática e <em>sensemaking</em> organizacional (como <strong>Antonakis et al.</strong>, 2011; <strong>Carton, Murphy &amp; Clark</strong>, 2014; e estudos recentes sobre liderança algorítmica e autenticidade percebida, como <strong>Wesche &amp; Sonderegger</strong>, 2019), que aponta que a conexão simbólica, a intencionalidade moral e a atribuição de significado no trabalho dependem fortemente da percepção de agência e investimento humano genuíno por parte do líder.</li>
+          <li><strong>Dado do experimento (achado exploratório):</strong> Ao serem perguntados sobre o impacto da mensagem instrucional, <strong>55,6%</strong> dos participantes que receberam textos escritos exclusivamente por humanos assinalaram que a mensagem <em>"fez a tarefa parecer mais importante ou significativa"</em> (ante <strong>36,4%</strong> no grupo de IA pura e <strong>32,4%</strong> no grupo de coautoria Humano + IA), além de registrarem a menor taxa de relato de indiferença (<em>"a mensagem inicial não me afetou"</em>: <strong>4,8%</strong>, contra <strong>18,2%</strong> na IA pura e <strong>14,1%</strong> na coautoria).</li>
+          <li><strong>Consequência no dia a dia:</strong> Na prática organizacional, esse dado exploratório sugere que é necessário refletir criticamente sobre o uso de IA quando o objetivo da comunicação está ligado a propósito, engajamento e significado, especialmente considerando-se o viés contra o algoritmo.</li>
+          <li><strong>Relação com a literatura:</strong> Os resultados dialogam com a literatura de liderança carismática e sinalização de valor (<strong>Antonakis et al., 2011; 2022</strong>; <strong>Ernst et al., 2022</strong>), segundo a qual a atribuição de propósito e significado em comunicações de liderança envolve dimensões simbólicas que podem ser atenuadas quando a mediação tecnológica substitui ou dilui a autoria humana direta.</li>
         </ul>
       </div>
 
       <div class="card">
         <h3>Delimitação da adoção operacional da IA</h3>
         <ul>
-          <li><strong>Dado do experimento:</strong> Não houve diferença estatisticamente significativa no volume (<em>p</em> &gt; 0,21) ou na precisão técnica (<em>p</em> &gt; 0,84) das entregas entre mensagens humanas e algorítmicas, mas a medição de volume atingiu o teto operacional da tarefa (31 fragmentos) em todos os grupos e não houve teste formal de não inferioridade.</li>
-          <li><strong>Consequência no dia a dia:</strong> Embora os dados sugiram ausência de rejeição comportamental imediata a instruções geradas por IA sob autoria oculta no cenário específico testado, o estudo sugere cautela para não presumir que algoritmos substituem a liderança humana sem perda de desempenho em atividades de maior complexidade.</li>
-          <li><strong>Relação com a literatura:</strong> Os achados dialogam com a linha de pesquisa sobre <em>human-AI augmentation</em> e produtividade no trabalho do conhecimento (incluindo <strong>Dell'Acqua et al.</strong>, 2023, sobre a "fronteira tecnológica irregular" da IA, e os estudos de <strong>Choudhury et al.</strong> sobre complementaridade entre humanos e algoritmos), que sugere que o ganho ou a manutenção de desempenho com o uso de IA varia substancialmente conforme a natureza, a estruturação e a complexidade cognitiva da tarefa executada.</li>
+          <li><strong>Dado do experimento:</strong> As hipóteses da pesquisa avaliaram o impacto da autoria da instrução sobre duas dimensões do desempenho dos 200 participantes: a <strong>quantidade</strong> (número de fragmentos transcritos) e a <strong>qualidade</strong> (precisão exata das transcrições). Não foram observadas diferenças estatisticamente significativas no volume (<em>p</em> &gt; 0,21) ou na precisão técnica (<em>p</em> &gt; 0,84) das entregas entre mensagens humanas e algorítmicas, mas a medição de volume atingiu o teto operacional da tarefa (31 fragmentos) em todos os grupos e não houve teste formal de não inferioridade.</li>
+          <li><strong>Consequência no dia a dia:</strong> No ambiente de trabalho, esses dados sugerem ausência de rejeição comportamental imediata a instruções geradas por IA quando a autoria é oculta em tarefas estruturadas, mas não autorizam presumir que algoritmos substituem a liderança humana sem perda de desempenho em atividades de maior complexidade.</li>
         </ul>
       </div>
     </section>
 
     <section>
-      <h2>2. Contribuições Teóricas</h2>
-      <p>No escopo do cenário testado, o estudo oferece evidências empíricas que conectam a psicologia das mídias, a interação humano-computador (HCI) e o comportamento organizacional em cinco frentes conceituais:</p>
+      <h2>2. Contribuições Teóricas e Científicas</h2>
+      <p>No escopo do cenário testado, o estudo amplia os modelos de interação humano-computador (HCI) e comportamento organizacional em duas frentes principais:</p>
       <ul>
-        <li><strong>Extensão do paradigma CASA (<em>Computers Are Social Actors</em>):</strong> Formulado originalmente por <strong>Reeves e Nass</strong> (1996), o paradigma CASA estabelece que os seres humanos aplicam automaticamente regras sociais, normas de polidez e heurísticas interpessoais às máquinas sempre que estas exibem pistas sociais (como linguagem natural), mesmo sabendo que estão diante de um computador. O presente estudo estende esse modelo para o domínio da <strong>liderança organizacional sob autoria oculta</strong>: os dados sugerem que os indivíduos processam instruções de trabalho geradas por algoritmos sem rejeição comportamental imediata, mantendo padrões de resposta operacional comparáveis aos observados diante de líderes humanos nesse contexto.</li>
-        <li><strong>Avanço no paradigma de Comunicação Mediada por IA (AI-MC — <em>AI-Mediated Communication</em>):</strong> Diferente da comunicação mediada por computador tradicional (CMC), em que a tecnologia atua apenas como canal neutro de transmissão entre dois humanos, o paradigma <strong>AI-MC</strong> (proposto por <strong>Hancock, Naaman &amp; Levy</strong>, 2020) descreve cenários em que sistemas algorítmicos operam como <strong>agentes ativos que modificam, otimizam ou geram integralmente a mensagem</strong> em nome de um comunicador humano (como ocorre nas condições de <em>augmentation</em> e IA pura deste estudo). O experimento contribui para essa teoria ao testar empiricamente como a intervenção algorítmica na redação gerencial afeta tanto a execução da tarefa quanto a percepção do receptor quando a mediação da IA não é revelada.</li>
-        <li><strong>Viés de atribuição humana na AI-MC (achado exploratório):</strong> Dentro do ecossistema da comunicação mediada por IA, os dados exploratórios apontam para uma forte heurística de presunção humana em contextos de trabalho. Na amostra total (<em>N</em> = 200), <strong>51,0%</strong> atribuíram a instrução exclusivamente a uma pessoa; mesmo entre os participantes expostos a textos 100% gerados por IA, <strong>54,5%</strong> acreditaram tratar-se de autoria humana (e apenas <strong>6,1%</strong> identificaram um sistema de IA), ilustrando a dificuldade cognitiva de detecção de autoria algorítmica em comunicações profissionais.</li>
-        <li><strong>Desacoplamento entre execução operacional e percepção de valor (achado exploratório):</strong> Embora não tenham sido observadas diferenças estatisticamente significativas na execução objetiva (quantidade e qualidade), os dados exploratórios sugerem uma associação entre a condição de autoria real e a atribuição de significado e relevância à atividade realizada (&chi;&sup2; = 8,24, <em>p</em> = 0,016). Esse achado sugere que a substituição ou mediação algorítmica pode preservar a obediência operacional imediata, mas alterar a dimensão simbólica e motivacional da liderança.</li>
-        <li><strong>Alcance de táticas carismáticas em texto na comunicação gerencial:</strong> O uso de técnicas verbais de carisma (CLTs) em comunicados curtos não produziu variação estatisticamente detectável na execução (<em>p</em> &gt; 0,50) quando a tarefa opera sob efeito de teto, delimitando as condições de contorno para a transferência de retórica carismática para mensagens escritas e mediadas por IA.</li>
+        <li><strong>Do paradigma CASA à Comunicação Mediada por IA (AI-MC):</strong> Na década de 1990 e início dos anos 2000, os pesquisadores de Stanford Clifford Nass, Byron Reeves e Youngme Moon formularam o paradigma <strong>CASA (<em>Computers Are Social Actors</em> — "Computadores são Atores Sociais"; Reeves &amp; Nass, 1996; Nass &amp; Moon, 2000)</strong>, mostrando que as pessoas interagem com máquinas e softwares aplicando inconscientemente as mesmas regras sociais de cortesia, reciprocidade e autoridade que usam com outros seres humanos, bastando que o sistema exiba pistas sociais mínimas, como o uso da linguagem natural. Com o avanço dos modelos generativos, esse campo evoluiu para o paradigma emergente da <strong>Comunicação Mediada por Inteligência Artificial (AI-MC)</strong> — sistematizado por <strong>Hancock, Naaman e Levy (2020)</strong> e expandido por <strong>Hohenstein et al. (2023)</strong> —, em que a máquina deixa de ser apenas um canal neutro ou interface fixa para atuar como coautora, modificadora ou emissora autônoma de mensagens em nome de pessoas. Os dados deste experimento conectam as duas abordagens no ambiente de liderança: mesmo quando a IA atuou como autora, sua origem não foi percebida na maioria dos casos, e observou-se uma tendência de humanização da mensagem, sugerindo que os receptores têm dificuldade de distinguir comunicações redigidas por humanos ou por máquinas sob autoria oculta.</li>
+        <li><strong>Viés de atribuição humana (<em>Human Attribution Bias</em> — achado exploratório):</strong> Em contexto de trabalho, prevalece a presunção de autoria humana. Na amostra total (<em>N</em> = 200), <strong>51,0%</strong> atribuíram o texto a uma pessoa; entre os que leram textos 100% gerados por IA (<em>N</em> = 66), <strong>54,5%</strong> acreditaram tratar-se de autoria humana. Esse achado corrobora evidências documentadas na literatura internacional sobre a dificuldade de detecção algorítmica e a tendência sistemática de presumir origem humana diante de textos gerados por máquinas:
+          <ul>
+            <li><strong>Jakesch, Hancock e Naaman (2023):</strong> Em experimentos avaliando textos gerados por modelos de linguagem em contextos sociais e profissionais, os autores identificaram o chamado viés de veracidade e autoria humana (<em>human-favoring bias</em>), demonstrando que avaliadores humanos tendem a classificar conteúdos produzidos por IA como escritos por pessoas com base em heurísticas linguísticas falhas (como o uso de pronome em primeira pessoa ou tom cordial), apresentando acurácia próxima ao acaso.</li>
+            <li><strong>Jannai et al. (2023):</strong> Em um experimento gamificado em larga escala baseado no Teste de Turing (<em>Human or Not?</em>) envolvendo 1,5 milhão de usuários, os participantes identificaram corretamente se o interlocutor era humano ou chatbot em apenas <strong>68%</strong> das interações gerais, caindo para <strong>60%</strong> de acerto quando o interlocutor era de fato um sistema de IA.</li>
+            <li><strong>Choudhury, Vanneste e Zohrehvand (2024):</strong> No ambiente corporativo (<em>The Wade Test</em>), ao avaliar respostas atribuídas a um CEO real ou a uma IA treinada em seu estilo, os colaboradores apresentaram acurácia geral de <strong>59,0%</strong> (e de <strong>56,6%</strong> nas respostas geradas por IA), falhando em distinguir a máquina do executivo acima do acaso em 6 das 10 perguntas avaliadas.</li>
+          </ul>
+        </li>
       </ul>
     </section>
 
     <section>
-      <h2>3. Método e Estrutura do Experimento</h2>
+      <h2>3. Ficha Técnica, Método e Estrutura do Experimento</h2>
       <ul>
-        <li><strong>Aprovação Ética e Amostra:</strong> Pesquisa aprovada pelo Comitê de Conformidade Ética da FGV (Parecer n. P.030.2025), com <strong>200 participantes válidos</strong> residentes no Brasil (recrutados via plataforma Prolific, após triagem inicial de 222 pessoas e exclusão de 19 por falha em checagens de atenção pré-tarefa).</li>
-        <li><strong>Tarefa Executada:</strong> Transcrição de documentos históricos do acervo CPDOC/FGV durante até 10 minutos (mínimo obrigatório de 1 fragmento e limite máximo de 31). O pagamento foi fixo (&pound;1,00), independentemente do volume adicional entregue.</li>
-        <li><strong>Desenho Fatorial 3&times;2:</strong> Os participantes foram divididos aleatoriamente em 6 grupos sem saber quem havia escrito a instrução:</li>
+        <li><strong>Autoria e Banca (FGV EAESP, 2026):</strong> Pesquisa de Mestrado Profissional em Administração (MPA) de <strong>Larissa Angélica Páscoa Santana</strong>, orientada pelo <strong>Prof. Dr. Paul Ferreira</strong> e avaliada por banca composta pelo <strong>Prof. Dr. Fábio Josgrilberg</strong> (FGV EAESP) e pela <strong>Profa. Dra. Tatiana Iwai</strong> (Insper).</li>
+        <li><strong>Aprovação Ética e Período de Coleta:</strong> Aprovada pelo Comitê de Conformidade Ética em Pesquisas Envolvendo Seres Humanos da FGV (Parecer n. P.030.2025, março de 2025), com coleta experimental executada entre abril e junho de 2026.</li>
+        <li><strong>Amostra, Tarefa e Incentivo:</strong> <strong>200 participantes válidos</strong> residentes no Brasil (recrutados via Prolific após triagem inicial de 222 indivíduos, dos quais 2 não aceitaram participar da pesquisa, 1 abandonou após aceitar o termo de consentimento e 19 foram excluídos por falha em checagens de atenção pré-tarefa). Cada participante recebeu aleatoriamente uma das mensagens de liderança sob autoria oculta, que orientava a realização da tarefa: transcrição de documentos históricos do acervo CPDOC/FGV durante até 10 minutos (mínimo obrigatório de 1 fragmento e limite máximo de 31). Como a remuneração de <strong>&pound;1,00 era fixa e já estava garantida com a transcrição de apenas um fragmento</strong>, cabia exclusivamente à mensagem estimular o colaborador a transcrever o maior volume possível de trechos.</li>
+      </ul>
+
+      <h3>Processo de Produção dos Estímulos (18 Mensagens Instrucionais sob Autoria Oculta)</h3>
+      <p>Para diferenciar os seis grupos do experimento fatorial 3&times;2, as mensagens foram elaboradas a partir de 12 líderes humanos reais e três plataformas de inteligência artificial (ChatGPT, Microsoft Copilot e Google Gemini), seguindo protocolos distintos de criação (3 mensagens selecionadas por grupo, respeitando o limite técnico de 250 palavras &plusmn; 20%):</p>
+      <ul>
+        <li><strong>Grupos Humanos (Grupos 1 e 2):</strong> Líderes reais redigiram as instruções manualmente, sem acesso a ferramentas de IA. No Grupo 1 (Controle), escreveram livremente com base nas regras da tarefa; no Grupo 2, receberam previamente treinamento nas táticas de liderança carismática de Antonakis et al. (2011; 2022) e orientação para aplicar obrigatoriamente ao menos uma técnica no texto.</li>
+        <li><strong>Grupos de Coautoria Humano + IA / <em>Augmentation</em> (Grupos 3 e 4):</strong> Líderes reais redigiram a base da instrução (sem treinamento de carisma no Grupo 3; com treinamento e aplicação obrigatória de táticas carismáticas de Antonakis et al., 2011; 2022 no Grupo 4) e, em seguida, utilizaram o ChatGPT para revisar e aprimorar o texto mediante um <em>prompt</em> padronizado de otimização (<em>"Por favor, melhore meu texto. Meu objetivo é que os colaboradores entreguem o maior número possível de transcrições, e com a maior qualidade possível"</em>).</li>
+        <li><strong>Grupos de IA Pura (Grupos 5 e 6):</strong> As mensagens foram geradas integralmente pelos modelos ChatGPT, Copilot e Gemini, sem redação humana prévia. No Grupo 5, os sistemas receberam apenas as diretrizes operacionais da tarefa; no Grupo 6, receberam no <em>prompt</em> a descrição das táticas de liderança carismática de Antonakis et al. (2011; 2022) com instrução para incorporá-las ao máximo no comunicado.</li>
       </ul>
 
       <table>
@@ -229,53 +257,53 @@
           <tr>
             <th>Condição de Autoria</th>
             <th>Sem Treinamento de Carisma</th>
-            <th>Com Treinamento de Carisma (12 táticas de Antonakis et al.)</th>
+            <th>Com Treinamento de Carisma (12 táticas de Antonakis et al., 2011; 2022)</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td><strong>Humano</strong></td>
-            <td>Grupo 1 (Controle)</td>
-            <td>Grupo 2</td>
+            <td>Grupo 1 (Controle — redação manual)</td>
+            <td>Grupo 2 (redação manual + carisma)</td>
           </tr>
           <tr>
             <td><strong>Humano + IA (<em>Augmentation</em>)</strong></td>
-            <td>Grupo 3 (Otimização via ChatGPT)</td>
-            <td>Grupo 4 (Treinamento + ChatGPT)</td>
+            <td>Grupo 3 (redação humana + otimização via ChatGPT)</td>
+            <td>Grupo 4 (redação humana com carisma + otimização via ChatGPT)</td>
           </tr>
           <tr>
             <td><strong>IA Pura</strong></td>
-            <td>Grupo 5 (ChatGPT, Copilot e Gemini)</td>
-            <td>Grupo 6 (LLMs com <em>prompt</em> de carisma)</td>
+            <td>Grupo 5 (geração 100% via ChatGPT, Copilot e Gemini)</td>
+            <td>Grupo 6 (geração 100% via LLMs com <em>prompt</em> de carisma)</td>
           </tr>
         </tbody>
       </table>
 
-      <p><strong>Nota sobre as táticas carismáticas:</strong> O treinamento baseou-se nas <strong>Táticas de Liderança Carismática (CLTs — <em>Charismatic Leadership Tactics</em>)</strong> empiricamente validadas por <strong>John Antonakis e colaboradores</strong> (Antonakis, Fenley &amp; Liechti, 2011), um protocolo comportamental e retórico estruturado para sinalização de carisma. Na dimensão verbal aplicada aos textos, o protocolo incluiu recursos como metáforas, histórias/anedotas, convicção moral, sentimento coletivo (uso do pronome "nós"), estabelecimento de altas expectativas, expressão de confiança no alcance dos objetivos, contrastes, listas em três partes/repetições e perguntas retóricas.</p>
+      <p><strong>Nota metodológica:</strong> As táticas verbais de carisma sistematizadas por Antonakis et al. (2011; 2022) — compiladas em nove categorias operacionais descritas em Ernst et al. (2022) — e aplicadas nos grupos 2, 4 e 6 abrangeram metáforas, histórias, convicção moral, pronome coletivo ("nós"), altas expectativas, confiança nos objetivos, contrastes, listas/repetições e perguntas retóricas.</p>
     </section>
 
     <section>
-      <h2>4. Resultados Estatísticos e Testes de Hipóteses</h2>
-      <p>O desempenho operacional foi avaliado por duas métricas principais: <strong>Quantidade</strong> (total de fragmentos transcritos, de 1 a 31) e <strong>Qualidade</strong> (proporção de transcrições exatas em relação ao gabarito).</p>
+      <h2>4. Resultados Estatísticos: Desempenho Operacional e Testes de Hipóteses</h2>
+      <p>As seis hipóteses da pesquisa foram estruturadas para testar se a autoria da instrução (Humano, IA ou Humano + IA) e o uso de táticas carismáticas alterariam o desempenho comportamental dos 200 participantes em duas métricas operacionais: <strong>Quantidade</strong> (total de fragmentos transcritos, de 1 a 31) e <strong>Qualidade</strong> (proporção de transcrições com correspondência exata ao gabarito oficial).</p>
       <ul>
-        <li><strong>Quantidade (Modelo GLMM Beta-Binomial):</strong> Observou-se efeito de teto em todos os grupos — pelo menos 75% dos participantes de cada condição atingiram o máximo de 31 transcrições (variando de <strong>86,1%</strong> a <strong>97,0%</strong> por grupo). As comparações pareadas não mostraram diferença estatisticamente significativa entre Humano, IA e Humano + IA (<em>p</em> &gt; 0,21 em todas as comparações). Devido ao efeito de teto e à ausência de teste formal de não inferioridade, a ausência de diferença estatística não permite concluir pela equiparação operacional entre as condições.</li>
-        <li><strong>Qualidade (Modelo GLM Quasi-Binomial com erros robustos por cluster CR2):</strong> Não foram encontradas diferenças estatisticamente significativas na precisão técnica das entregas entre as condições de autoria (<em>p</em> &gt; 0,84 em todas as comparações), não sendo possível, porém, atestar equivalência formal sem análise específica de não inferioridade.</li>
-        <li><strong>Efeito do carisma e hipóteses:</strong> Nenhuma das seis hipóteses (H1a, H1b, H2a, H2b, H3a, H3b) foi suportada empiricamente (<em>p</em> &gt; 0,50 para os efeitos principais e interações). O uso de táticas carismáticas não produziu acréscimo estatisticamente significativo de quantidade ou precisão neste experimento.</li>
+        <li><strong>Quantidade de Entregas (Modelo GLMM Beta-Binomial):</strong> Registrou-se efeito de teto em todas as condições — pelo menos 75% dos participantes de cada grupo atingiram o máximo de 31 transcrições (variando de <strong>86,1%</strong> a <strong>97,0%</strong>). As comparações pareadas (com ajuste de Tukey) não apresentaram diferença estatisticamente significativa entre Humano, IA e Humano + IA (<em>p</em> &gt; 0,21 em todas as comparações). Devido ao efeito de teto e à ausência de teste formal de não inferioridade, a ausência de diferença estatística não permite concluir que as condições produzam o mesmo volume de entregas.</li>
+        <li><strong>Qualidade Técnica (Modelo GLM Quasi-Binomial com erros robustos por cluster CR2):</strong> Não foram detectadas diferenças estatisticamente significativas na precisão técnica das entregas entre as condições de autoria (<em>p</em> &gt; 0,84 em todas as comparações), não sendo possível, porém, atestar igualdade de desempenho sem análise específica de não inferioridade.</li>
+        <li><strong>Testes de Hipóteses (H1a a H3b):</strong> Nenhuma das seis hipóteses formuladas foi suportada empiricamente (<em>p</em> &gt; 0,50 para efeitos principais e interações). A inclusão de táticas carismáticas não apresentou associação estatisticamente significativa com acréscimo de quantidade ou precisão.</li>
       </ul>
     </section>
 
     <section>
-      <h2>5. Dados Exploratórios: Percepção de Autoria e Impacto</h2>
-      <p>Os dados a seguir têm caráter <strong>exploratório</strong> e refletem as respostas pós-tarefa sobre quem os participantes acreditavam ter escrito a mensagem e qual foi o impacto percebido da instrução:</p>
+      <h2>5. Resultados Exploratórios: Colaboradores Identificam Autoria de IA e Sentem Diferença no Propósito?</h2>
+      <p>Os dados a seguir têm caráter <strong>exploratório</strong> e refletem as respostas pós-tarefa dos 200 participantes sobre quem acreditavam ter redigido a instrução e qual foi o impacto percebido:</p>
 
       <table>
         <thead>
           <tr>
             <th>Autoria Percebida pelo Participante</th>
-            <th class="num">Fonte Real: Humano (N=63)</th>
-            <th class="num">Fonte Real: IA (N=66)</th>
-            <th class="num">Fonte Real: Humano + IA (N=71)</th>
-            <th class="num">Total (N=200)</th>
+            <th class="num">Fonte Real: Humano (N = 63)</th>
+            <th class="num">Fonte Real: IA (N = 66)</th>
+            <th class="num">Fonte Real: Humano + IA (N = 71)</th>
+            <th class="num">Total Amostral (N = 200)</th>
           </tr>
         </thead>
         <tbody>
@@ -311,17 +339,17 @@
       </table>
 
       <ul>
-        <li><strong>Percepção de importância da tarefa (dado exploratório, &chi;&sup2; = 8,24, <em>p</em> = 0,016):</strong> A proporção de participantes que relataram perceber a tarefa como "mais importante / significativa" após ler a instrução foi de <strong>55,6%</strong> no grupo Humano, <strong>36,4%</strong> no grupo IA e <strong>32,4%</strong> no grupo Humano + IA.</li>
-        <li><strong>Indiferença à mensagem (dado exploratório, <em>p</em> = 0,047):</strong> A proporção de participantes que assinalaram que "a mensagem inicial não me afetou" foi de <strong>4,8%</strong> no grupo Humano, <strong>18,2%</strong> no grupo IA e <strong>14,1%</strong> no grupo Humano + IA.</li>
+        <li><strong>Percepção de importância da tarefa (dado exploratório, &chi;&sup2; = 8,24, <em>p</em> = 0,016):</strong> Ao serem perguntados sobre o impacto da mensagem instrucional, <strong>55,6%</strong> dos participantes que receberam texto escrito exclusivamente por humanos assinalaram que a mensagem <em>"fez a tarefa parecer mais importante / significativa"</em>, contra <strong>36,4%</strong> no grupo de IA pura e <strong>32,4%</strong> no grupo de coautoria Humano + IA.</li>
+        <li><strong>Indiferença à mensagem (dado exploratório, <em>p</em> = 0,047):</strong> A resposta de que <em>"a mensagem inicial não me afetou"</em> foi registrada por <strong>4,8%</strong> dos participantes no grupo Humano, <strong>18,2%</strong> no grupo IA pura e <strong>14,1%</strong> no grupo de coautoria Humano + IA.</li>
       </ul>
     </section>
 
     <section>
       <h2>6. Escopo e Limitações Metodológicas</h2>
-      <p>A interpretação dos achados deve considerar os limites estruturais deste experimento em cenário específico:</p>
+      <p>A interpretação e aplicação organizacional dos achados devem considerar oito delimitações estruturais do estudo:</p>
       <ol>
         <li><strong>Natureza da atividade:</strong> Tarefa mecânica de transcrição de baixa complexidade cognitiva, distinta de atividades corporativas que exigem negociação ou resolução de problemas complexos.</li>
-        <li><strong>Efeito de teto e ausência de teste de não inferioridade:</strong> O limite de 31 fragmentos em 10 minutos saturou a medição de esforço máximo, impedindo detectar variações finas e inviabilizando conclusões de equivalência operacional sem testes estatísticos específicos de não inferioridade.</li>
+        <li><strong>Efeito de teto e ausência de teste de não inferioridade:</strong> O limite de 31 fragmentos em 10 minutos saturou a medição de esforço máximo, impedindo detectar variações finas e inviabilizando conclusões de igualdade operacional sem testes estatísticos específicos de não inferioridade.</li>
         <li><strong>Seleção pós-exposição:</strong> A exclusão dos 19 participantes por falha no teste de atenção ocorreu após a leitura dos estímulos, com taxas distintas entre os grupos.</li>
         <li><strong>Sigilo de autoria:</strong> O estudo não testou a reação dos participantes diante da declaração explícita (<em>disclosure</em>) de que o texto foi gerado por IA.</li>
         <li><strong>Variação textual:</strong> O uso de 18 mensagens distintas exigiu controle estatístico por efeitos aleatórios e clusters, limitando análises isoladas de cada texto.</li>
@@ -330,10 +358,28 @@
         <li><strong>Tamanho amostral (<em>N</em> = 200):</strong> Poder estatístico restrito para detectar variações sutis específicas de cada mensagem individual.</li>
       </ol>
     </section>
+
+    <section>
+      <h2>7. Referências Bibliográficas</h2>
+      <ul class="refs">
+        <li>Antonakis, J., Fenley, M., &amp; Liechti, S. (2011). Can charisma be taught? Tests of two interventions. <em>Academy of Management Learning &amp; Education</em>, 10(3), 374–396.</li>
+        <li>Antonakis, J., d'Adda, G., Weber, R. A., &amp; Zehnder, C. (2022). "Just Words? Just Speeches?" On the economic value of charismatic leadership. <em>Management Science</em>, 68(9), 6355–6381.</li>
+        <li>Choudhury, P., Vanneste, B. S., &amp; Zohrehvand, A. (2024). <em>The Wade Test: Generative AI and CEO Communication</em> (Harvard Business School Working Paper No. 25-008).</li>
+        <li>Ernst, B. A., Banks, G. C., Loignon, A. C., Frear, K. A., Williams, C. E., Arciniega, L. M., Gupta, R. K., Kodydek, G., &amp; Subramanian, D. (2022). Virtual charismatic leadership and signaling theory: A prospective meta-analysis in five countries. <em>The Leadership Quarterly</em>, 33(5), 101541.</li>
+        <li>Globo Gente. <em>O impacto da IA nos hábitos de consumo do brasileiro</em>.</li>
+        <li>Hancock, J. T., Naaman, M., &amp; Levy, K. (2020). AI-Mediated Communication: Definition, research agenda, and ethical considerations. <em>Journal of Computer-Mediated Communication</em>, 25(1), 89–100.</li>
+        <li>Hohenstein, J., Kizilcec, R. F., DiFranzo, D., Aghajari, Z., Mieczkowski, H., Levy, K., Naaman, M., Hancock, J., &amp; Jung, M. F. (2023). Artificial intelligence in communication impacts language and social relationships. <em>Scientific Reports</em>, 13, 5487.</li>
+        <li>Jakesch, M., Hancock, J. T., &amp; Naaman, M. (2023). Human heuristics for AI-generated language are flawed. <em>Proceedings of the National Academy of Sciences (PNAS)</em>, 120(11), e2208839120.</li>
+        <li>Jannai, D., Meron, A., Lenz, B., Levine, Y., &amp; Shoham, Y. (2023). <em>Human or not? A gamified approach to the Turing test</em> (arXiv Working Paper 2305.20010).</li>
+        <li>Nass, C., &amp; Moon, Y. (2000). Machines and mindlessness: Social responses to computers. <em>Journal of Social Issues</em>, 56(1), 81–103.</li>
+        <li>Reeves, B., &amp; Nass, C. (1996). <em>The Media Equation: How People Treat Computers, Television, and New Media Like Real People and Places</em>. Cambridge University Press.</li>
+        <li>Santana, L. A. P. (2026). <em>Mensagens de Liderança sob Autoria Oculta: Efeitos da Autoria Humana, da Inteligência Artificial e de Augmentation Humano–IA</em>. Dissertação de Mestrado (MPA), Fundação Getulio Vargas (FGV EAESP), São Paulo.</li>
+      </ul>
+    </section>
   </main>
 
   <footer>
-    <p><strong>Como citar este relatório técnico:</strong> SANTANA, Larissa Angélica Páscoa. <em>Relatório Técnico: Mensagens de Liderança sob Autoria Oculta (IA, Humano e Augmentation)</em>. São Paulo: FGV EAESP, 2026.</p>
+    <p><strong>Como citar este relatório técnico:</strong> SANTANA, Larissa Angélica Páscoa; FERREIRA, Paul. <em>Relatório Técnico: Mensagens de Liderança sob Autoria Oculta (IA, Humano e Augmentation)</em>. São Paulo: FGV EAESP, 2026.</p>
   </footer>
 
 </body>

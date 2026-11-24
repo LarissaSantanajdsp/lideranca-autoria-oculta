@@ -14,3 +14,6 @@ User-agent: ClaudeBot
 Allow: /
 
 Sitemap: https://larissasantanajdsp.github.io/lideranca-autoria-oculta/sitemap.xml
+
+Llms-txt: https://larissasantanajdsp.github.io/lideranca-autoria-oculta/llms.txt
+Llms-txt: https://larissasantanajdsp.github.io/lideranca-autoria-oculta/llms-en.txt
